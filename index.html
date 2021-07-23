@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<embed src="http://music.163.com/song/media/outer/url?id=1384026889.mp3" hidden="true" autostart="true" loop="true">
 <meta charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <title>数学老师，祝您节日快乐！</title>
@@ -77,53 +78,6 @@
 	<p>您是严冬时的木炭火，是酷暑里的浓树荫，是湍流中的踏脚石，是雾海中的航标灯——老师，您言传身教，育人有方，甘为蜡烛，祝您节日快乐！</p>
 	</div>
     </div>
-
-
-<audio src="https://sharefs.ali.kugou.com/202107232308/ed48794fdc11e7b291e3731faaf5037e/G154/M04/1B/19/2g0DAF0Plm-AeRzLAC267cfhHAY201.mp3" controls="" autoplay="autoplay" loop="loop" id="bgmusic" style="display:none"></audio>
- <script>
-    (function() {
-        function log(info) {
-            console.log(info);
-            // alert(info);
-        }
-        function forceSafariPlayAudio() {
-            audioEl.load(); //iOS 9   还需要额外的 load 一下, 否则直接 play 无效
-            audioEl.play(); //iOS 7/8 仅需要 play 一下
-        }
-
-        var audioEl = document.getElementById('bgmusic');
-
-        audioEl.addEventListener('loadstart', function() {
-            log('loadstart');
-        }, false);
-        audioEl.addEventListener('loadeddata', function() {
-            log('loadeddata');
-        }, false);
-        audioEl.addEventListener('loadedmetadata', function() {
-            log('loadedmetadata');
-        }, false);
-        audioEl.addEventListener('canplay', function() {
-            log('canplay');
-        }, false);
-        audioEl.addEventListener('play', function() {
-            log('play');
-            // 当 audio 能够播放后, 移除这个事件
-            window.removeEventListener('touchstart', forceSafariPlayAudio, false);
-        }, false);
-        audioEl.addEventListener('playing', function() {
-            log('playing');
-        }, false);
-        audioEl.addEventListener('pause', function() {
-            log('pause');
-        }, false);
-
-        // 由于 iOS Safari 限制不允许 audio autoplay, 必须用户主动交互(例如 click)后才能播放 audio,
-        // 因此我们通过一个用户交互事件来主动 play 一下 audio.
-        window.addEventListener('touchstart', forceSafariPlayAudio, false);
-
-        audioEl.src = "http://music.163.com/song/media/outer/url?id=29750751.mp3";
-    })();
-    </script>
 
     <!-- js加载 -->
 	<script>var zaiyiqi = '2019-01-01 00:00:00';</script>
